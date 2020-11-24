@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1b1b1b;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif
+}
+
+
+#welcome-section {
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+.info {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.info2 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* styling for nav bar*/ 
+#navbar {
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+  top: 0;
+  font-size: 20px;
+}
+.navwrap {
+    text-align: right;
+}
+@media only screen and (min-width: 600px){
+    #navbar {padding: 20px;}
+}
+
+
+
+@media only screen and (max-width: 600px) { 
+
+    .info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .info2 {
+    position: absolute;
+    top: 56%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+
+} }
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    margin-right:20px ;
+    position: relative;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;            
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: rgb(236, 23, 219);
+}
+
+ a:hover
+ 
+ {
+    color: rgb(236, 23, 219);
+
+  }
+
+  ::before {
+    background: linear-gradient(to right, rgb(236, 23, 219) 40%, rgb(76, 73, 243) 75%); 
+  }
+
+
+  footer {
+      font-size: 20px;
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #contact-section {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .fa-github {
+      font-size: 100px;
+  }
+
+  h3 {
+      color: white;
+      font-size: 30px;
+  }
